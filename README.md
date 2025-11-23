@@ -1,70 +1,63 @@
-# Java Web App Deployment with AWS CI/CD
+# Full CI/CD Web App Deployment Pipeline on AWS
 
-Welcome to this project combining Java web app development and AWS CI/CD tools!
+## 🚀 Project Overview
 
-<br>
+## Architecture Diagram
 
-## Table of Contents
-- [Introduction](#introduction)
-- [Technologies](#technologies)
-- [Setup](#setup)
-- [Contact](#contact)
-- [Conclusion](#conclusion)
+<img width="2718" height="864" alt="image" src="https://github.com/user-attachments/assets/9f89d32f-3ba1-4b03-be63-1055b959dcb7" />
 
-<br>
+This project demonstrates a full CI/CD pipeline for a Java web application using AWS services. The workflow covers source control in GitHub, package management with CodeArtifact, build automation using CodeBuild, deployment through CodeDeploy on EC2 instances, and orchestration with CodePipeline.
 
-## Introduction
-This project is used for an introduction to creating and deploying a Java-based web app using AWS, especially their CI/CD tools.
+---
 
-The deployment pipeline I'm building around the Java web app in this repository is invisible to the end-user, but makes a big impact by automating the software release processes.
+## 📚 Project Phases
 
-- I'm doing this project to learn more about CI/CD and get hands on experience in automating the flow from developing code to deployed web app. 
+### 🔶 Phase 1: Set Up a Web App in the Cloud  
+📌 [https://learn.nextwork.org/projects/aws-devops-vscode](https://learn.nextwork.org/projects/aws-devops-vscode)  
+- Build and test Java app locally  
+- Connect AWS with IAM credentials  
+- Set up EC2 instance and deploy app
 
-<br>
+---
 
-## Technologies
-Here’s what I’m using for this project:
+### 🔶 Phase 2: Connect a GitHub Repo with AWS  
+📌 [https://learn.nextwork.org/projects/aws-devops-github](https://learn.nextwork.org/projects/aws-devops-github)  
+- Link GitHub with AWS CodePipeline  
+- Automate build and deploy triggers
 
-- **Amazon EC2**: I'm developing my web app on Amazon EC2 virtual servers, so that software development and deployment happens entirely on the cloud.
-- Key pairs, SSH connections, Git, Maven and Java.
-- **VSCode**: For my IDE, I chose Visual Studio Code. It connects directly to my development EC2 instance, making it easy to edit code and manage files in the cloud.
-- **GitHub**: All my web app code is stored and versioned in this GitHub repository.
-- **[COMING SOON] AWS CodeArtifact**: Once it's rolled out, CodeArtifact will store my artifacts and dependencies, which is great for high availability and speeding up my project's build process.
-- **[COMING SOON] AWS CodeBuild**: Once it's rolled out, CodeBuild will take over my build process. It'll compile the source code, run tests, and produce ready-to-deploy software packages automatically.
-- **[COMING SOON] AWS CodeDeploy**: Once it's rolled out, CodeDeploy will automate my deployment process across EC2 instances.
-- **[COMING SOON] AWS CodePipeline**: Once it's rolled out, CodePipeline will automate the entire process from GitHub to CodeDeploy, integrating build, test, and deployment steps into one efficient workflow.
+---
 
+### 🔶 Phase 3: Secure Packages with CodeArtifact  
+📌 [https://learn.nextwork.org/projects/aws-devops-codeartifact-updated](https://learn.nextwork.org/projects/aws-devops-codeartifact-updated)  
+- Manage Java dependencies securely  
+- Integrate CodeArtifact with Maven and CodeBuild
 
-<br>
+---
 
-## Setup
-To get this project up and running on your local machine, follow these steps:
+### 🔶 Phase 4: Continuous Integration with CodeBuild  
+📌 [https://learn.nextwork.org/projects/aws-devops-codebuild-updated](https://learn.nextwork.org/projects/aws-devops-codebuild-updated)  
+- Automate build and packaging  
+- Upload artifacts to S3  
+- Monitor build logs
 
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/yourusername/nextwork-web-project.git
-    ```
-2. Navigate to the project directory:
-    ```bash
-    cd nextwork-web-project
-    ```
-3. Install dependencies:
-    ```bash
-    mvn install
-    ```
+---
 
-<br>
+### 🔶 Phase 5: Deploy a Web App with CodeDeploy  
+📌 [https://learn.nextwork.org/projects/aws-devops-codedeploy-updated](https://learn.nextwork.org/projects/aws-devops-codedeploy-updated)  
+- Automate deployments to EC2  
+- Monitor deployment status and rollback
 
-## Contact
-If you have any questions or comments about the my CI/CD project, please contact:
-Natasha - [email@example.com](mailto:email@example.com)
+---
 
-- [LinkedIn](https://www.linkedin.com/in/natasha-ong/)
+### 🔶 Phase 6: Build a CI/CD Pipeline with AWS  
+📌 [https://learn.nextwork.org/projects/aws-devops-codepipeline-updated](https://learn.nextwork.org/projects/aws-devops-codepipeline-updated)  
+- Integrate GitHub, CodeBuild, and CodeDeploy  
+- Fully automate source-build-deploy process
 
-<br>
+---
 
-## Conclusion
-Thank you for exploring this project! I'll continue to build this pipeline and apply my learnings to future projects.
+## 🙏 Thanks
 
-A big shoutout to **[NextWork](https://learn.nextwork.org/app)** for their project guide and support. [You can get started with this DevOps series project too by clicking here.](https://learn.nextwork.org/projects/aws-devops-vscode?track=high)
+Special thanks to the [NEXTWORK team](https://community.nextwork.org/c/all-aws-projects-e6e5db/devops-projects) for the 7-day project guidance and resources.
 
+---
