@@ -19,7 +19,6 @@ This project is used for an introduction to creating and deploying a Java-based 
 The deployment pipeline I'm building around the Java web app in this repository is invisible to the end-user, but makes a big impact by automating the software release processes.
 
 - I'm doing this project to learn more about CI/CD and get hands on experience in automating the flow from developing code to deployed web app. 
-- This fits into my career goals because I want to become a DevOps engineer this year!
 
 <br>
 
